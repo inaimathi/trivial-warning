@@ -13,6 +13,6 @@
 (def ^:dynamic *strict?* (not (in-repl?)))
 
 (defn warn [message]
-  (if *strict?*
+  (if (not (in-repl?))
     (throw (Exception. message))
     (println "WARNING:" message)))
