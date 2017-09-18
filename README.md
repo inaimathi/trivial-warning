@@ -101,5 +101,6 @@ warning-example.core=>
 
 Copyright © 2017 inaimathi
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Some of the code in this library was cribbed from https://stackoverflow.com/a/30413356/190887
+
+Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
