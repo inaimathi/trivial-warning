@@ -10,9 +10,10 @@
 (defn in-repl? []
   (some repl-stack-element? (current-stack-trace)))
 
-(def ^:dynamic *strict?* (not (in-repl?)))
+(def ^:dynamic *strict?* nil)
 
 (defn warn [message]
-  (if (not (in-repl?))
-    (throw (Exception. message))
-    (println "WARNING:" message)))
+  (binding [*strict?* (if (nil? *strict?*) (not (in-repl?)) *strict?*)]
+    (if *strict?*
+      (throw (Exception. message))
+      (println "WARNING:" message))))
