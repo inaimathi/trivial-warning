@@ -1,5 +1,7 @@
 # trivial-warning
 
+[![Build Status](https://travis-ci.org/inaimathi/trivial-warning.svg?branch=master)](https://travis-ci.org/inaimathi/trivial-warning)
+
 A Clojure library designed to allow warnings to be used in Clojure code.
 
 It's sometimes useful to write error `raise`ing code that should fail in testing or production environments, but succeeds with a warning message while `REPL`ing for ease of interactive development.
