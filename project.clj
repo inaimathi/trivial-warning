@@ -1,4 +1,4 @@
-(defproject trivial-warning "1.0.3-SNAPSHOT"
+(defproject trivial-warning "1.0.3"
   :description "A trivial, REPL-friendly warn function for Clojure"
   :url "https://github.com/inaimathi/trivial-warning"
   :license {:name "Eclipse Public License"

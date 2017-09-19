@@ -8,7 +8,7 @@ The `warn` function defined in `trivial-warning` gives you that functionality.
 
 ## Usage
 
-`[trivial-warning "1.0.3-SNAPSHOT"]`
+`[trivial-warning "1.0.3"]`
 
 
 ### Basics
